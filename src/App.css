@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+body{
+  background-color: #1c5865
+}
+table,
+td,
+th {
+    padding: 1px;
+    border-collapse: collapse;
+}
+.buttons {
+    border-radius:  50% 50% 50% 50% / 25% 25% 25% 25%  ;
+    width: 75px;
+    height: 75px;
+    font-size: 35px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#id\+button, #id\-button, #id\*button, #id\/button{
+    background-color: rgb(183, 182, 182);
+    border-radius: 50% 50% 50% 50%  / 33% 33% 33% 33%    ;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#id\+button:hover, #id\-button:hover, #id\*button:hover, #id\/button:hover, .buttons:hover, #idCbutton:hover, #id0button:hover, #idCALCULATEbutton:hover{
+    background-color: rgb(0, 221, 255);
+    cursor:pointer;
+    border-radius: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#id0button {
+    border-radius:  10% 10% 10% 10% / 25% 25% 25% 25%  ;
+    width: 153px;
+    height: 75px;
 }
-
-.App-link {
-  color: #61dafb;
+#idCbutton {
+    background-color: rgb(255, 168, 168);
+    border-radius: 15%   ;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    padding: 0px;
+    font-size: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#idCALCULATEbutton {
+    background-color: rgb(38, 180, 128);
+    border-radius: 10% 10% 10% 10% / 25% 25% 25% 25%      ;
+    width: 229px;
+    height: 75px;
+    text-align: center;
+    padding: 0px;
+    font-size: 30px;
+}
+#display{
+    color: white;
+    border-radius: 5% 5% 5% 5%/ 25% 25% 25% 25%  ;
+    font-size: 25px;
+    width: 300px;
+    height: 50px;
+}
+#root{              
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.head{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
