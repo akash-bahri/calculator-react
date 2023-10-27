@@ -7,57 +7,44 @@ th {
     padding: 1px;
     border-collapse: collapse;
 }
+
 .buttons {
     border-radius:  50% 50% 50% 50% / 25% 25% 25% 25%  ;
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     font-size: 35px;
+    border:0px;
 }
 
-#id\+button, #id\-button, #id\*button, #id\/button{
+
+#id\+button, #id\-button, #id\*button, #id\/button, #id\!button, #id\^2button, #id\%button, #id\√button, #id\(button,#id\)button{
     background-color: rgb(144, 137, 137);
-    border-radius: 50% 50% 50% 50%  / 33% 33% 33% 33%    ;
 }
 
 #id0button {
     border-radius:  10% 10% 10% 10% / 25% 25% 25% 25%  ;
-    width: 153px;
-    height: 75px;
+    width: 200px;
 }
 #idCbutton {
-    background-color: rgb(255, 168, 168);
-    border-radius: 15%   ;
-    width: 75px;
-    height: 75px;
-    text-align: center;
-    padding: 0px;
-    font-size: 30px;
+    background-color: rgb(127, 41, 41);
+    border-radius:  10% 10% 10% 10% / 25% 25% 25% 25% ;
+    width: 200px;
 }
-#idCALCULATEbutton {
+#id\=button {
     background-color: rgb(38, 180, 128);
     border-radius: 10% 10% 10% 10% / 25% 25% 25% 25%      ;
-    width: 229px;
-    height: 75px;
-    text-align: center;
-    padding: 0px;
-    font-size: 30px;
+    width: 406px;
 }
-.result{
-    background-color: #6e6e78;
-    color: white;
-    border-radius: 5% 5% 5% 5%/ 25% 25% 25% 25%  ;
-    font-size: 30px;
-    width: 300px;
-    height: 50px;
-}
+
 .display{
-    background-color: #35353a;
-    color: rgb(166, 166, 166);
-    border-radius: 5% 5% 5% 5%/ 25% 25% 25% 25%  ;
-    font-size: 20px;
-    text-align: center;
-    width: 300px;
-    height: 50px;
+    background-color: #3c3c45;
+    color: white;
+    border-radius: 5% 5% 5% 5%/ 25% 25% 25% 25%  ; 
+    border: 0px;
+    font-size: 30px;
+    text-align: right;
+    width: 403px;
+    height: 75px;
 }
 #root{              
     display: flex;
@@ -67,12 +54,12 @@ th {
 .head{
     text-align: center;
     color: white;
-    font-size: 40px;
-    
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-size: 55px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-#id\+button:hover, #id\-button:hover, #id\*button:hover, #id\/button:hover, .buttons:hover, #idCbutton:hover, #id0button:hover, #idCALCULATEbutton:hover{
+#id\+button:hover, #id\^2button:hover, #id\%button:hover,  #id\!button:hover,#id\)button:hover, #id\(button:hover,  #id\√button:hover, #id\-button:hover, #id\*button:hover, #id\/button:hover, .buttons:hover, #idCbutton:hover, #id0button:hover, #idCALCULATEbutton:hover{
     background-color: rgb(0, 221, 255);
     cursor:pointer;
-    border-radius: 100%;
+   
 }
