@@ -1,5 +1,5 @@
 body{
-  background-color: #1c5865
+  background-color: #28282c
 }
 table,
 td,
@@ -15,14 +15,10 @@ th {
 }
 
 #id\+button, #id\-button, #id\*button, #id\/button{
-    background-color: rgb(183, 182, 182);
+    background-color: rgb(144, 137, 137);
     border-radius: 50% 50% 50% 50%  / 33% 33% 33% 33%    ;
 }
-#id\+button:hover, #id\-button:hover, #id\*button:hover, #id\/button:hover, .buttons:hover, #idCbutton:hover, #id0button:hover, #idCALCULATEbutton:hover{
-    background-color: rgb(0, 221, 255);
-    cursor:pointer;
-    border-radius: 100%;
-}
+
 #id0button {
     border-radius:  10% 10% 10% 10% / 25% 25% 25% 25%  ;
     width: 153px;
@@ -46,10 +42,20 @@ th {
     padding: 0px;
     font-size: 30px;
 }
-#display{
+.result{
+    background-color: #6e6e78;
     color: white;
     border-radius: 5% 5% 5% 5%/ 25% 25% 25% 25%  ;
-    font-size: 25px;
+    font-size: 30px;
+    width: 300px;
+    height: 50px;
+}
+.display{
+    background-color: #35353a;
+    color: rgb(166, 166, 166);
+    border-radius: 5% 5% 5% 5%/ 25% 25% 25% 25%  ;
+    font-size: 20px;
+    text-align: center;
     width: 300px;
     height: 50px;
 }
@@ -64,4 +70,9 @@ th {
     font-size: 40px;
     
     font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+#id\+button:hover, #id\-button:hover, #id\*button:hover, #id\/button:hover, .buttons:hover, #idCbutton:hover, #id0button:hover, #idCALCULATEbutton:hover{
+    background-color: rgb(0, 221, 255);
+    cursor:pointer;
+    border-radius: 100%;
 }

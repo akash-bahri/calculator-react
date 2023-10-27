@@ -1,5 +1,6 @@
 import './components/Calculator.js'
-import Calculator from './components/Calculator.js';
+import OC from './components/Calculator.js';
+import SC from './components/S-Calculator-1.js';
 import Sircalc from './components/Sir_calc.js';
 import './App.css';
 
@@ -7,7 +8,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Calculator/>
+      <SC/>
     </div>
   );
 }

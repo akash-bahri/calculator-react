@@ -151,7 +151,7 @@ function Calculator() {
     /*Render components*/
     return (
         <div>
-            <h1>Old Calculator</h1>
+            <h1>new Calculator</h1>
             <TextField />
             <div>Previous: {prevValue} <br /> Current: {currentValue} <br /> Operator: {op}</div>
             <br /><br />
