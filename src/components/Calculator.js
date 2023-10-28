@@ -2,24 +2,26 @@ import React, { useState, useEffect } from 'react';
 var perc = false;
 var PrevValue = 0;
 var CurrentValue = 0;
-//Function to handle any error in calculation like Syntax error
-function Eval(val) {
-    let total = 0;
-    try {
-        total = eval(val);
-        return total;
-    }
-    catch (err) {
-        console.log(err);
-    }
-
-}
 
 function Calculator() {
 
     /*initializing UseStates*/
     const [display, setDisplay] = useState("");
     const [cal, setCal] = useState("");
+
+    //Function to handle any error in calculation like Syntax error
+    function Eval(val) {
+        let total = 0;
+        try {
+            total = eval(val);
+            return total;
+        }
+        catch (err) {
+            setDisplay("Syntax Error")
+            console.log(err);
+        }
+    
+    }
 
     /*Operator calculation using switch/case */
     function Operator(op) {
@@ -167,15 +169,15 @@ function Calculator() {
             </div>
             <br />
             <div class="row">
-                <CalcButton val={'('} />
-                <CalcButton val={')'} />
+                <CalcButton val={'√'} />
+                <CalcButton val={'!'} />
                 <CalcButton val={'C'} />
             </div>
 
             <div class="row">
+                <CalcButton val={'('} />
+                <CalcButton val={')'} />
                 <CalcButton val={'^2'} />
-                <CalcButton val={'√'} />
-                <CalcButton val={'!'} />
                 <CalcButton val={'%'} />
             </div>
             <div class="row">

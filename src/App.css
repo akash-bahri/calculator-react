@@ -164,7 +164,7 @@ body{
 }
 .select-match{
     margin: 10px;
-    background-color: rgb(144, 137, 137);
+    background-color: rgb(72, 73, 80);
     border-radius:  10% 10% 10% 10% / 25% 25% 25% 25% ;
     width: 150px;
     height: 50px;
@@ -172,7 +172,9 @@ body{
     border:0px;
     color: white;
 }
-.match-history{
+#score{
+    display:flex;
+    align-items: center ;
     color: whitesmoke;
     font-size: 20px;
 }

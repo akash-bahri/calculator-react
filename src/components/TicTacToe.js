@@ -48,7 +48,7 @@ function TicTacToe() {
                     { winner: result === 'X' ? player1Name : player2Name, grid: newGrid },
                 ]);
             } else if (newGrid.every((Val) => Val !== null)) {
-                // It's a draw
+               
                 setWinner('Draw');
 
                 setHistory([
@@ -92,7 +92,7 @@ function TicTacToe() {
 
     };
 
-    const renderStatus = () => {
+    const ShowResult = () => {
         const gridToUse = selectedMatchGrid || grid;
         const result = checkWinner(gridToUse);
         const WinnerName = selectedMatch ? selectedMatch.winner : winner;
@@ -139,7 +139,7 @@ function TicTacToe() {
                 {GridButton(7)}
                 {GridButton(8)}
             </div>
-            <div className="status">{renderStatus()}</div>
+            <div className="status">{ShowResult()}</div>
             <div className="player-names">
                 Player Names:
                 <input className='playertxt'
@@ -159,16 +159,20 @@ function TicTacToe() {
                 <button className="reset-button" onClick={resetGrid}>Reset grid</button>
             </div>
 
-            <div className="match-history">
-                <h2>Match History</h2>
+            <div  id='score'>
+                
+                <h2>SCORE BOARD</h2>
+                
+                
                 <ol>
                     {history.map((object, index) => (
                         <li>
                             Winner - {object.winner}
-                            <button className='select-match' onClick={() => handleSelectMatch(index)}>Select</button>
+                            <button className='select-match' onClick={() => handleSelectMatch(index)}>➤</button>
                         </li>
                     ))}
                 </ol>
+                
             </div>
         </div>
     );
