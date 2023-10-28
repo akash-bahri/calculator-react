@@ -1,16 +1,44 @@
-import './components/Calculator.js'
-import OC from './components/Calculator.js';
-import SC from './components/S-Calculator-1.js';
-import Sircalc from './components/Sir_calc.js';
+import SC from './components/Calculator.js';
+import Tictac from './components/TicTacToe.js';
 import './App.css';
+import { useState } from 'react';
+
 
 
 function App() {
+  const [Tag, SetTag] = useState(<div><h1 className='head '>SELECT APP TO RUN</h1></div>);
+  const [activeButton, setActiveButton] = useState(null);
+
+  function Scal() {
+    SetTag(<SC />);
+    setActiveButton('CALCULATOR');
+  }
+
+  function Ocal() {
+    SetTag(<Tictac />);
+    setActiveButton('TIC TAC TOE');
+  }
+
   return (
     <div className="App">
-      <SC/>
+      <div>
+        <button
+          className={`MainButtons ${activeButton === 'CALCULATOR' ? 'active' : ''}`}
+          onClick={Scal}
+        >
+          CALCULATOR
+        </button>
+        <button
+          className={`MainButtons ${activeButton === 'TIC TAC TOE' ? 'active' : ''}`}
+          onClick={Ocal}
+        >
+          TIC TAC TOE
+        </button>
+      </div>
+      <div>{Tag}</div>
     </div>
   );
 }
+
 
 export default App;
