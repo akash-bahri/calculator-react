@@ -56,7 +56,7 @@ function Calculator() {
         /* = key press */
         if (value === "=" & PrevValue != '=') {
             console.log(cal);
-            if (Number.isInteger(PrevValue) || PrevValue == ')' || PrevValue == '!' || PrevValue == '√' || PrevValue == '^2') {
+            if (Number.isInteger(PrevValue) || PrevValue == ')' || PrevValue == '!' || PrevValue == '√' || PrevValue == '^2'|| PrevValue == '%') {
                 setDisplay(Eval(cal))
                 setCal(Eval(cal))
                 perc = false;
