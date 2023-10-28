@@ -3,8 +3,6 @@ import Tictac from './components/TicTacToe.js';
 import './App.css';
 import { useState } from 'react';
 
-
-
 function App() {
   const [Tag, SetTag] = useState(<div><h1 className='head '>SELECT APP TO RUN</h1></div>);
   const [activeButton, setActiveButton] = useState(null);

@@ -38,11 +38,11 @@ function TicTacToe() {
             newGrid[index] = char;
             setGrid(newGrid);
             setChar(char === 'X' ? 'O' : 'X');
-    
+
             const result = checkWinner(newGrid);
             if (result) {
                 setWinner(result === 'X' ? player1Name : player2Name);
-    
+
                 setHistory([
                     ...history,
                     { winner: result === 'X' ? player1Name : player2Name, grid: newGrid },
@@ -50,7 +50,7 @@ function TicTacToe() {
             } else if (newGrid.every((Val) => Val !== null)) {
                 // It's a draw
                 setWinner('Draw');
-    
+
                 setHistory([
                     ...history,
                     { winner: 'Draw', grid: newGrid },
@@ -58,7 +58,7 @@ function TicTacToe() {
             }
         }
     };
-    
+
 
     const GridButton = (index) => {
         let buttonClass = "tictac";
@@ -93,22 +93,22 @@ function TicTacToe() {
     };
 
     const renderStatus = () => {
-        const gridToUse = selectedMatchGrid || grid; 
+        const gridToUse = selectedMatchGrid || grid;
         const result = checkWinner(gridToUse);
-        const WinnerName= selectedMatch ? selectedMatch.winner : winner;
+        const WinnerName = selectedMatch ? selectedMatch.winner : winner;
         //console.log(WinnerName);
         if (result) {
             return (
                 <div>
-                <div >{WinnerName}</div>
-                <div> IS THE WINNER !!!</div>
+                    <div >{WinnerName}</div>
+                    <div> IS THE WINNER !!!</div>
                 </div>
             );
         } else if (grid.every((Val) => Val !== null)) {
             return 'It\'s a draw!';
-        } else if (WinnerName==="Draw") {
+        } else if (WinnerName === "Draw") {
             return `DRAW MATCH :)`;
-        } 
+        }
         else {
             let name = char === 'X' ? player1Name : player2Name;
             return `Turn : ${name}`;
@@ -123,7 +123,7 @@ function TicTacToe() {
 
     return (
         <div className="tictactoe">
-           <br/>
+            <br />
             <div className="row">
                 {GridButton(0)}
                 {GridButton(1)}
@@ -141,7 +141,7 @@ function TicTacToe() {
             </div>
             <div className="status">{renderStatus()}</div>
             <div className="player-names">
-                Player Names: 
+                Player Names:
                 <input className='playertxt'
                     type="text"
                     placeholder="Player 1 Name"

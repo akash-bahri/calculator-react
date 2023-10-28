@@ -12,7 +12,7 @@ function Eval(val) {
     catch (err) {
         console.log(err);
     }
-    
+
 }
 
 function Calculator() {
@@ -46,10 +46,10 @@ function Calculator() {
     function Clicked(value) {
         PrevValue = CurrentValue;
         CurrentValue = value;
-         /* = key press after = will do nothing
-         if (PrevValue === '=' & value === '=') {
-             console.log("do nothing");
-         }*/
+        /* = key press after = will do nothing
+        if (PrevValue === '=' & value === '=') {
+            console.log("do nothing");
+        }*/
 
         /* = key press */
         if (value === "=" & PrevValue != '=') {
